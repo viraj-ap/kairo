@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+
+# Build output (the compiled WASM in src/engine/pkg IS committed, so deploys need no Rust)
+dist/
+engine/target/
+
+# Local Cloudflare state (wrangler dev Durable Object data)
+.wrangler/
+
+# Test and benchmark output
+test-results/
+playwright-report/
+e2e/.out/
+
+# Local docs and notes. Only the benchmark results the README links to are published;
+# the system design lives in README.md.
+docs/*
+!docs/benchmarks.md
+!docs/benchmarks.json
+!docs/benchmarks-transfer.json
+!docs/benchmarks-audio.json
+
+# Demo-video drafts and recordings (scripts/demo writes raw footage to .cache/demo)
+demo/draft/
+*.webm
+
+# Environment
+.env
+.env*.local
+
+# TypeScript / coverage
+*.tsbuildinfo
+coverage/
+
+# Editor / OS / agents
+.DS_Store
+.claude/
+.vscode/
+.idea/
+*.log
+.scratch/
+.cache/
+# Real phone clips for e2e/footage.spec.ts (personal footage, never committed)
+e2e/media/real/*
+!e2e/media/real/README.txt

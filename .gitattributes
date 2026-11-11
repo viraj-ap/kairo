@@ -1,0 +1,5 @@
+# Binary assets: no diffs or line-ending conversion
+*.wasm binary
+*.mp4  binary
+*.m4a  binary
+*.png  binary

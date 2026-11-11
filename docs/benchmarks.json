@@ -1,0 +1,819 @@
+{
+  "date": "2026-11-10T15:54:22.241Z",
+  "machine": {
+    "cpu": "Apple M5",
+    "cores": 10,
+    "memoryGB": 24,
+    "os": "Darwin 25.6.0",
+    "browser": "153.0.8010.12",
+    "headless": true
+  },
+  "runs": 3,
+  "median": {
+    "crossOriginIsolated": true,
+    "seekWarm_540p_gop30": {
+      "n": 200,
+      "exact": 200,
+      "accuracy": 1,
+      "latencyMs": {
+        "n": 200,
+        "p50": 2.11,
+        "p95": 5.28,
+        "p99": 7.09,
+        "max": 19.34,
+        "mean": 2.34
+      },
+      "misses": []
+    },
+    "seekCold_540p_gop30": {
+      "n": 100,
+      "exact": 100,
+      "accuracy": 1,
+      "latencyMs": {
+        "n": 100,
+        "p50": 8.42,
+        "p95": 11.1,
+        "p99": 11.57,
+        "max": 11.78,
+        "mean": 8.34
+      },
+      "misses": []
+    },
+    "farSeekWarm_1080p_gop60": {
+      "n": 60,
+      "exact": 60,
+      "accuracy": 1,
+      "latencyMs": {
+        "n": 60,
+        "p50": 10.89,
+        "p95": 22.32,
+        "p99": 23.86,
+        "max": 23.86,
+        "mean": 10.95
+      },
+      "misses": []
+    },
+    "farSeekCold_1080p_gop60": {
+      "n": 60,
+      "exact": 60,
+      "accuracy": 1,
+      "latencyMs": {
+        "n": 60,
+        "p50": 17.64,
+        "p95": 27.92,
+        "p99": 29.84,
+        "max": 29.84,
+        "mean": 18
+      },
+      "misses": []
+    },
+    "farSeekWarm_1080p_gop250": {
+      "n": 40,
+      "exact": 40,
+      "accuracy": 1,
+      "latencyMs": {
+        "n": 40,
+        "p50": 29.39,
+        "p95": 84.75,
+        "p99": 93.15,
+        "max": 93.15,
+        "mean": 36.88
+      },
+      "misses": []
+    },
+    "farSeekCold_1080p_gop250": {
+      "n": 40,
+      "exact": 40,
+      "accuracy": 1,
+      "latencyMs": {
+        "n": 40,
+        "p50": 42.7,
+        "p95": 95.46,
+        "p99": 97.21,
+        "max": 97.21,
+        "mean": 48.43
+      },
+      "misses": []
+    },
+    "sequential_1080p": {
+      "frames": 300,
+      "exact": 300,
+      "decodeFps": 293.9
+    },
+    "playback_3track_1080p_60s": {
+      "seconds": 60,
+      "resolution": "1920x1080",
+      "compositor": "webgpu",
+      "expectedFrames": 1800,
+      "presented": 1799,
+      "dropped": 1,
+      "dropRate": 0,
+      "frameRenderMs": {
+        "n": 1799,
+        "p50": 1.25,
+        "p95": 1.92,
+        "p99": 2.3,
+        "max": 25.97,
+        "mean": 1.3
+      },
+      "dropsBySecond": {
+        "0": 1
+      }
+    },
+    "export_1080p_10s": {
+      "width": 1920,
+      "height": 1080,
+      "seconds": 10,
+      "source": "3-track 1080p timeline",
+      "wallSeconds": 1.23,
+      "xRealtime": 8.16,
+      "bytes": 7404033
+    },
+    "export_720p_10s": {
+      "width": 1280,
+      "height": 720,
+      "seconds": 10,
+      "source": "3-track 1080p timeline",
+      "wallSeconds": 0.62,
+      "xRealtime": 16.06,
+      "bytes": 3696226
+    },
+    "collab": {
+      "transport": "wss → Durable Object relay (wrangler dev, localhost), AES-GCM both ways",
+      "edits": 200,
+      "roundTripMs": {
+        "n": 200,
+        "p50": 3.86,
+        "p95": 6.33,
+        "p99": 7.38,
+        "max": 8.76,
+        "mean": 4.19
+      },
+      "oneWayEstimateMs": {
+        "n": 200,
+        "p50": 1.93,
+        "p95": 3.17,
+        "p99": 3.69,
+        "max": 4.38,
+        "mean": 2.09
+      }
+    }
+  },
+  "perRun": {
+    "decode": [
+      {
+        "crossOriginIsolated": true,
+        "seekWarm_540p_gop30": {
+          "n": 200,
+          "exact": 200,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 200,
+            "p50": 2.11,
+            "p95": 5.28,
+            "p99": 7.09,
+            "max": 61.52,
+            "mean": 2.49
+          },
+          "misses": []
+        },
+        "seekCold_540p_gop30": {
+          "n": 100,
+          "exact": 100,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 100,
+            "p50": 8.29,
+            "p95": 11.04,
+            "p99": 11.57,
+            "max": 11.78,
+            "mean": 8.3
+          },
+          "misses": []
+        },
+        "farSeekWarm_1080p_gop60": {
+          "n": 60,
+          "exact": 60,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 60,
+            "p50": 10.89,
+            "p95": 22.89,
+            "p99": 23.64,
+            "max": 23.64,
+            "mean": 10.95
+          },
+          "misses": []
+        },
+        "farSeekCold_1080p_gop60": {
+          "n": 60,
+          "exact": 60,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 60,
+            "p50": 15.25,
+            "p95": 27.39,
+            "p99": 28.48,
+            "max": 28.48,
+            "mean": 16.78
+          },
+          "misses": []
+        },
+        "farSeekWarm_1080p_gop250": {
+          "n": 40,
+          "exact": 40,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 40,
+            "p50": 29.39,
+            "p95": 84.75,
+            "p99": 93.15,
+            "max": 93.15,
+            "mean": 36.88
+          },
+          "misses": []
+        },
+        "farSeekCold_1080p_gop250": {
+          "n": 40,
+          "exact": 40,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 40,
+            "p50": 45.47,
+            "p95": 98.26,
+            "p99": 99.12,
+            "max": 99.12,
+            "mean": 48.43
+          },
+          "misses": []
+        },
+        "sequential_1080p": {
+          "frames": 300,
+          "exact": 300,
+          "decodeFps": 293.9
+        },
+        "playback_3track_1080p_60s": {
+          "seconds": 60,
+          "resolution": "1920x1080",
+          "compositor": "webgpu",
+          "expectedFrames": 1800,
+          "presented": 1799,
+          "dropped": 1,
+          "dropRate": 0.0006,
+          "frameRenderMs": {
+            "n": 1799,
+            "p50": 1.26,
+            "p95": 1.98,
+            "p99": 2.86,
+            "max": 20.25,
+            "mean": 1.33
+          },
+          "dropsBySecond": {
+            "0": 1
+          }
+        },
+        "export_1080p_10s": {
+          "width": 1920,
+          "height": 1080,
+          "seconds": 10,
+          "source": "3-track 1080p timeline",
+          "wallSeconds": 1.23,
+          "xRealtime": 8.16,
+          "bytes": 7404033
+        },
+        "export_720p_10s": {
+          "width": 1280,
+          "height": 720,
+          "seconds": 10,
+          "source": "3-track 1080p timeline",
+          "wallSeconds": 0.62,
+          "xRealtime": 16.06,
+          "bytes": 3696226
+        }
+      },
+      {
+        "crossOriginIsolated": true,
+        "seekWarm_540p_gop30": {
+          "n": 200,
+          "exact": 200,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 200,
+            "p50": 2.22,
+            "p95": 5.17,
+            "p99": 6.84,
+            "max": 19.34,
+            "mean": 2.33
+          },
+          "misses": []
+        },
+        "seekCold_540p_gop30": {
+          "n": 100,
+          "exact": 100,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 100,
+            "p50": 8.47,
+            "p95": 11.26,
+            "p99": 11.68,
+            "max": 13.83,
+            "mean": 8.54
+          },
+          "misses": []
+        },
+        "farSeekWarm_1080p_gop60": {
+          "n": 60,
+          "exact": 60,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 60,
+            "p50": 10.5,
+            "p95": 22.32,
+            "p99": 23.86,
+            "max": 23.86,
+            "mean": 10.15
+          },
+          "misses": []
+        },
+        "farSeekCold_1080p_gop60": {
+          "n": 60,
+          "exact": 60,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 60,
+            "p50": 17.64,
+            "p95": 27.92,
+            "p99": 29.84,
+            "max": 29.84,
+            "mean": 18
+          },
+          "misses": []
+        },
+        "farSeekWarm_1080p_gop250": {
+          "n": 40,
+          "exact": 40,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 40,
+            "p50": 38.48,
+            "p95": 88.98,
+            "p99": 95.93,
+            "max": 95.93,
+            "mean": 41.74
+          },
+          "misses": []
+        },
+        "farSeekCold_1080p_gop250": {
+          "n": 40,
+          "exact": 40,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 40,
+            "p50": 39.86,
+            "p95": 84.58,
+            "p99": 88.88,
+            "max": 88.88,
+            "mean": 43.85
+          },
+          "misses": []
+        },
+        "sequential_1080p": {
+          "frames": 300,
+          "exact": 300,
+          "decodeFps": 286.7
+        },
+        "playback_3track_1080p_60s": {
+          "seconds": 60,
+          "resolution": "1920x1080",
+          "compositor": "webgpu",
+          "expectedFrames": 1800,
+          "presented": 1799,
+          "dropped": 1,
+          "dropRate": 0.0006,
+          "frameRenderMs": {
+            "n": 1799,
+            "p50": 1.25,
+            "p95": 1.92,
+            "p99": 2.3,
+            "max": 27.68,
+            "mean": 1.3
+          },
+          "dropsBySecond": {
+            "0": 1
+          }
+        },
+        "export_1080p_10s": {
+          "width": 1920,
+          "height": 1080,
+          "seconds": 10,
+          "source": "3-track 1080p timeline",
+          "wallSeconds": 1.22,
+          "xRealtime": 8.17,
+          "bytes": 7404033
+        },
+        "export_720p_10s": {
+          "width": 1280,
+          "height": 720,
+          "seconds": 10,
+          "source": "3-track 1080p timeline",
+          "wallSeconds": 0.62,
+          "xRealtime": 16.04,
+          "bytes": 3696226
+        }
+      },
+      {
+        "crossOriginIsolated": true,
+        "seekWarm_540p_gop30": {
+          "n": 200,
+          "exact": 200,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 200,
+            "p50": 2.11,
+            "p95": 5.31,
+            "p99": 7.33,
+            "max": 17.47,
+            "mean": 2.34
+          },
+          "misses": []
+        },
+        "seekCold_540p_gop30": {
+          "n": 100,
+          "exact": 100,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 100,
+            "p50": 8.42,
+            "p95": 11.1,
+            "p99": 11.52,
+            "max": 11.66,
+            "mean": 8.34
+          },
+          "misses": []
+        },
+        "farSeekWarm_1080p_gop60": {
+          "n": 60,
+          "exact": 60,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 60,
+            "p50": 12.53,
+            "p95": 20.77,
+            "p99": 23.88,
+            "max": 23.88,
+            "mean": 11.76
+          },
+          "misses": []
+        },
+        "farSeekCold_1080p_gop60": {
+          "n": 60,
+          "exact": 60,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 60,
+            "p50": 18.78,
+            "p95": 29.16,
+            "p99": 30.18,
+            "max": 30.18,
+            "mean": 18.72
+          },
+          "misses": []
+        },
+        "farSeekWarm_1080p_gop250": {
+          "n": 40,
+          "exact": 40,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 40,
+            "p50": 28.58,
+            "p95": 79.71,
+            "p99": 85.25,
+            "max": 85.25,
+            "mean": 32.17
+          },
+          "misses": []
+        },
+        "farSeekCold_1080p_gop250": {
+          "n": 40,
+          "exact": 40,
+          "accuracy": 1,
+          "latencyMs": {
+            "n": 40,
+            "p50": 42.7,
+            "p95": 95.46,
+            "p99": 97.21,
+            "max": 97.21,
+            "mean": 51.98
+          },
+          "misses": []
+        },
+        "sequential_1080p": {
+          "frames": 300,
+          "exact": 300,
+          "decodeFps": 296.2
+        },
+        "playback_3track_1080p_60s": {
+          "seconds": 60,
+          "resolution": "1920x1080",
+          "compositor": "webgpu",
+          "expectedFrames": 1800,
+          "presented": 1799,
+          "dropped": 1,
+          "dropRate": 0.0006,
+          "frameRenderMs": {
+            "n": 1799,
+            "p50": 1.25,
+            "p95": 1.92,
+            "p99": 2.28,
+            "max": 25.97,
+            "mean": 1.3
+          },
+          "dropsBySecond": {
+            "0": 1
+          }
+        },
+        "export_1080p_10s": {
+          "width": 1920,
+          "height": 1080,
+          "seconds": 10,
+          "source": "3-track 1080p timeline",
+          "wallSeconds": 1.23,
+          "xRealtime": 8.16,
+          "bytes": 7404033
+        },
+        "export_720p_10s": {
+          "width": 1280,
+          "height": 720,
+          "seconds": 10,
+          "source": "3-track 1080p timeline",
+          "wallSeconds": 0.62,
+          "xRealtime": 16.07,
+          "bytes": 3696226
+        }
+      }
+    ],
+    "collab": [
+      {
+        "transport": "wss → Durable Object relay (wrangler dev, localhost), AES-GCM both ways",
+        "edits": 200,
+        "roundTripMs": {
+          "n": 200,
+          "p50": 4.2,
+          "p95": 6.45,
+          "p99": 7.38,
+          "max": 10.93,
+          "mean": 4.33
+        },
+        "oneWayEstimateMs": {
+          "n": 200,
+          "p50": 2.1,
+          "p95": 3.23,
+          "p99": 3.69,
+          "max": 5.46,
+          "mean": 2.17
+        }
+      },
+      {
+        "transport": "wss → Durable Object relay (wrangler dev, localhost), AES-GCM both ways",
+        "edits": 200,
+        "roundTripMs": {
+          "n": 200,
+          "p50": 3.73,
+          "p95": 6.15,
+          "p99": 7.98,
+          "max": 8.76,
+          "mean": 4
+        },
+        "oneWayEstimateMs": {
+          "n": 200,
+          "p50": 1.86,
+          "p95": 3.08,
+          "p99": 3.99,
+          "max": 4.38,
+          "mean": 2
+        }
+      },
+      {
+        "transport": "wss → Durable Object relay (wrangler dev, localhost), AES-GCM both ways",
+        "edits": 200,
+        "roundTripMs": {
+          "n": 200,
+          "p50": 3.86,
+          "p95": 6.33,
+          "p99": 6.98,
+          "max": 7.91,
+          "mean": 4.19
+        },
+        "oneWayEstimateMs": {
+          "n": 200,
+          "p50": 1.93,
+          "p95": 3.17,
+          "p99": 3.49,
+          "max": 3.95,
+          "mean": 2.09
+        }
+      }
+    ]
+  },
+  "soak": {
+    "minutes": 10,
+    "runs": [
+      {
+        "minutes": 10,
+        "crossOriginIsolated": true,
+        "samples": [
+          {
+            "t": 0,
+            "uaBytes": 16831296,
+            "jsHeap": 4941085,
+            "workerCachedFrames": 0,
+            "decoders": 0,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 561
+          },
+          {
+            "t": 30,
+            "uaBytes": 27776831,
+            "jsHeap": 4199021,
+            "workerCachedFrames": 129,
+            "decoders": 8,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 984
+          },
+          {
+            "t": 60,
+            "uaBytes": 27804799,
+            "jsHeap": 4210200,
+            "workerCachedFrames": 129,
+            "decoders": 7,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 2201
+          },
+          {
+            "t": 90,
+            "uaBytes": 27813815,
+            "jsHeap": 4083836,
+            "workerCachedFrames": 129,
+            "decoders": 5,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 2695
+          },
+          {
+            "t": 120,
+            "uaBytes": 26247723,
+            "jsHeap": 4798621,
+            "workerCachedFrames": 129,
+            "decoders": 7,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 3314
+          },
+          {
+            "t": 150,
+            "uaBytes": 26252539,
+            "jsHeap": 4073324,
+            "workerCachedFrames": 129,
+            "decoders": 4,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 3964
+          },
+          {
+            "t": 180,
+            "uaBytes": 26250619,
+            "jsHeap": 4073748,
+            "workerCachedFrames": 129,
+            "decoders": 5,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 4465
+          },
+          {
+            "t": 211,
+            "uaBytes": 27689267,
+            "jsHeap": 4040280,
+            "workerCachedFrames": 129,
+            "decoders": 7,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 5251
+          },
+          {
+            "t": 241,
+            "uaBytes": 27610373,
+            "jsHeap": 3967640,
+            "workerCachedFrames": 129,
+            "decoders": 10,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 6075
+          },
+          {
+            "t": 271,
+            "uaBytes": 27626021,
+            "jsHeap": 4652694,
+            "workerCachedFrames": 129,
+            "decoders": 5,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 6802
+          },
+          {
+            "t": 301,
+            "uaBytes": 26064601,
+            "jsHeap": 3939244,
+            "workerCachedFrames": 129,
+            "decoders": 8,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 7490
+          },
+          {
+            "t": 331,
+            "uaBytes": 27629346,
+            "jsHeap": 4796257,
+            "workerCachedFrames": 129,
+            "decoders": 9,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 8230
+          },
+          {
+            "t": 361,
+            "uaBytes": 27612569,
+            "jsHeap": 4154324,
+            "workerCachedFrames": 129,
+            "decoders": 5,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 8712
+          },
+          {
+            "t": 391,
+            "uaBytes": 26083461,
+            "jsHeap": 4030788,
+            "workerCachedFrames": 129,
+            "decoders": 10,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 9683
+          },
+          {
+            "t": 421,
+            "uaBytes": 27636582,
+            "jsHeap": 4145893,
+            "workerCachedFrames": 129,
+            "decoders": 7,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 10481
+          },
+          {
+            "t": 451,
+            "uaBytes": 35949829,
+            "jsHeap": 4128207,
+            "workerCachedFrames": 129,
+            "decoders": 8,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 10888
+          },
+          {
+            "t": 481,
+            "uaBytes": 27668794,
+            "jsHeap": 4942250,
+            "workerCachedFrames": 129,
+            "decoders": 10,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 11999
+          },
+          {
+            "t": 511,
+            "uaBytes": 26086777,
+            "jsHeap": 3907284,
+            "workerCachedFrames": 129,
+            "decoders": 5,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 12432
+          },
+          {
+            "t": 541,
+            "uaBytes": 27667365,
+            "jsHeap": 4142750,
+            "workerCachedFrames": 129,
+            "decoders": 6,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 13214
+          },
+          {
+            "t": 572,
+            "uaBytes": 27671196,
+            "jsHeap": 4116460,
+            "workerCachedFrames": 129,
+            "decoders": 7,
+            "mainLiveFrames": 0,
+            "presentedSoFar": 13917
+          }
+        ],
+        "uaBytes": {
+          "first": 16831296,
+          "last": 27671196,
+          "max": 35949829
+        },
+        "maxWorkerCachedFrames": 129,
+        "maxMainLiveFrames": 0,
+        "presentedTotal": 14464,
+        "playStarts": 135,
+        "uaSamplesTimedOut": 0
+      }
+    ]
+  }
+}

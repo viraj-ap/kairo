@@ -1,0 +1,56 @@
+{
+  "name": "kairo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc -p . && tsc -p server && vite build",
+    "serve": "vite build && wrangler dev --port 8787",
+    "deploy": "npm run build && wrangler deploy",
+    "engine": "wasm-pack build engine --target web --release --out-dir ../src/engine/pkg --out-name kairo_core && rm -f src/engine/pkg/.gitignore src/engine/pkg/package.json",
+    "test": "vitest run",
+    "test:engine": "cargo test --manifest-path engine/Cargo.toml",
+    "e2e": "playwright test",
+    "bench": "node scripts/bench.mjs",
+    "golden": "UPDATE_GOLDEN=1 playwright test visual",
+    "demo-media": "bash scripts/make-demo-media.sh",
+    "bench:transfer": "node scripts/bench-transfer.mjs",
+    "bench:audio": "node scripts/bench-audio.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "@noble/hashes": "^2.4.0",
+    "lucide-react": "^1.70.0",
+    "mp4-muxer": "^5.2.2",
+    "mp4box": "^2.5.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "y-indexeddb": "^9.0.12",
+    "y-protocols": "^1.0.7",
+    "yjs": "^13.6.33",
+    "zustand": "^5.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261109.1",
+    "@playwright/test": "^1.65.0",
+    "@types/dom-webcodecs": "^0.1.19",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "@webgpu/types": "^0.1.74",
+    "node-turn": "^0.0.6",
+    "pngjs": "^7.0.0",
+    "ssim.js": "^3.5.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.159.0"
+  },
+  "allowScripts": {
+    "workerd@1.20261109.1": true,
+    "esbuild@0.28.2": true
+  }
+}

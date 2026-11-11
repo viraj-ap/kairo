@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-10T15:21:15.165Z",
+  "machine": {
+    "cpu": "Apple M5",
+    "cores": 10,
+    "memoryGB": 24,
+    "browser": "153.0.8010.12"
+  },
+  "file": {
+    "path": ".cache/media/big_1080p.mp4",
+    "bytes": 1003211172,
+    "description": "1080p30 H.264 40 Mbit/s CBR + AAC, 200 s"
+  },
+  "transport": "WebRTC DataChannel via local TURN relay (node-turn on 127.0.0.1); signaling over the encrypted WebSocket room (wrangler dev, localhost)",
+  "import": {
+    "hashAndStoreSeconds": 11.44,
+    "proxyGenerationSeconds": 14.55,
+    "proxyBytes": 40863036,
+    "originalChunks": 957
+  },
+  "runs": [
+    {
+      "playableSeconds": 4.1,
+      "fullProxySeconds": 4.64,
+      "fullOriginalSeconds": 34.91,
+      "proxyMBps": 9.66,
+      "originalMBps": 31.59,
+      "rerequestedStored": 0,
+      "duplicateChunks": 0
+    },
+    {
+      "playableSeconds": 3.66,
+      "fullProxySeconds": 4.18,
+      "fullOriginalSeconds": 34.32,
+      "proxyMBps": 10.92,
+      "originalMBps": 31.78,
+      "rerequestedStored": 0,
+      "duplicateChunks": 0
+    },
+    {
+      "playableSeconds": 4.09,
+      "fullProxySeconds": 4.61,
+      "fullOriginalSeconds": 36.41,
+      "proxyMBps": 9.79,
+      "originalMBps": 30.12,
+      "rerequestedStored": 0,
+      "duplicateChunks": 0
+    }
+  ],
+  "median": {
+    "playableSeconds": 4.09,
+    "fullProxySeconds": 4.61,
+    "fullOriginalSeconds": 34.91,
+    "proxyMBps": 9.79,
+    "originalMBps": 31.59,
+    "rerequestedStored": 0,
+    "duplicateChunks": 0
+  },
+  "resume": {
+    "killed": {
+      "atSeconds": 14.24,
+      "progress": 0.4,
+      "chunksStored": 383
+    },
+    "completedSeconds": 44.84,
+    "hashVerified": true,
+    "chunksTotal": 957,
+    "chunksServedByA": 960,
+    "chunksResent": 3,
+    "distinctChunksSentTwice": 3,
+    "storedChunksResentAfterKill": 0,
+    "retriedInflight": 4,
+    "rerequestedStored": 0
+  },
+  "twoHoldersSetup": {
+    "cGotItVia": "local"
+  },
+  "twoHolders": {
+    "fullOriginalSeconds": 38.1,
+    "originalMBps": 28.28,
+    "chunksPerPeer": [
+      614,
+      382
+    ],
+    "chunksNeeded": 996,
+    "duplicateChunks": 0,
+    "onePeerOriginalMBps": 31.59
+  }
+}

@@ -1,0 +1,23 @@
+[package]
+name = "kairo-core"
+version = "0.1.0"
+edition = "2021"
+description = "Kairo timeline engine: render planning, audio mix plan, three-way diff/merge"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[dev-dependencies]
+proptest = "1"
+
+[profile.release]
+opt-level = "s"
+lto = true
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = false

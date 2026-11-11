@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-10T15:33:38.076Z",
+  "machine": {
+    "cpu": "Apple M5",
+    "memoryGB": 24,
+    "browser": "153.0.8010.12"
+  },
+  "runs": 3,
+  "memory": {
+    "median": {
+      "file": "60 min AAC 128 kbit/s, 48 kHz stereo (59 MB)",
+      "streaming": true,
+      "playedSeconds": 20,
+      "underruns": 0,
+      "peaksSeconds": 30.34,
+      "peaksBuckets": 360003,
+      "memory": {
+        "baselineMB": 5.6,
+        "streamingPeakMB": 21.5
+      },
+      "processRss": {
+        "streaming": {
+          "baselineMB": 1262,
+          "peakMB": 1450,
+          "deltaMB": 184
+        },
+        "oldFullDecode": {
+          "baselineMB": 1268,
+          "peakMB": 5378,
+          "deltaMB": 4110,
+          "decodedPcmMB": 1382.4
+        }
+      }
+    },
+    "runs": [
+      {
+        "file": "60 min AAC 128 kbit/s, 48 kHz stereo (59 MB)",
+        "streaming": true,
+        "playedSeconds": 20,
+        "underruns": 0,
+        "peaksSeconds": 30.336,
+        "peaksBuckets": 360003,
+        "memory": {
+          "baselineMB": 5.6,
+          "streamingPeakMB": 21.5
+        },
+        "processRss": {
+          "streaming": {
+            "baselineMB": 1201,
+            "peakMB": 1496,
+            "deltaMB": 295
+          },
+          "oldFullDecode": {
+            "baselineMB": 1312,
+            "peakMB": 6556,
+            "deltaMB": 5244,
+            "decodedPcmMB": 1382.4
+          }
+        }
+      },
+      {
+        "file": "60 min AAC 128 kbit/s, 48 kHz stereo (59 MB)",
+        "streaming": true,
+        "playedSeconds": 20,
+        "underruns": 0,
+        "peaksSeconds": 31.163,
+        "peaksBuckets": 360003,
+        "memory": {
+          "baselineMB": 5.6,
+          "streamingPeakMB": 21.5
+        },
+        "processRss": {
+          "streaming": {
+            "baselineMB": 1266,
+            "peakMB": 1450,
+            "deltaMB": 184
+          },
+          "oldFullDecode": {
+            "baselineMB": 1268,
+            "peakMB": 5378,
+            "deltaMB": 4110,
+            "decodedPcmMB": 1382.4
+          }
+        }
+      },
+      {
+        "file": "60 min AAC 128 kbit/s, 48 kHz stereo (59 MB)",
+        "streaming": true,
+        "playedSeconds": 20,
+        "underruns": 0,
+        "peaksSeconds": 30.033,
+        "peaksBuckets": 360003,
+        "memory": {
+          "baselineMB": 5.6,
+          "streamingPeakMB": 21.5
+        },
+        "processRss": {
+          "streaming": {
+            "baselineMB": 1262,
+            "peakMB": 1439,
+            "deltaMB": 177
+          },
+          "oldFullDecode": {
+            "baselineMB": 1264,
+            "peakMB": 5352,
+            "deltaMB": 4088,
+            "decodedPcmMB": 1382.4
+          }
+        }
+      }
+    ]
+  },
+  "avDrift": {
+    "median": {
+      "seconds": 300,
+      "streaming": true,
+      "flashesPresented": 299,
+      "beepsHeard": 300,
+      "pairs": 299,
+      "driftMs": {
+        "n": 299,
+        "p50": 12.63,
+        "p95": 19.45,
+        "p99": 20.2,
+        "max": 20.64,
+        "mean": 12.88,
+        "avg": 12.88,
+        "meanSigned": -12.88
+      },
+      "oneFrameMs": 33.33,
+      "outputLatencyMs": 16,
+      "baseLatencyMs": 5.33
+    },
+    "runs": [
+      {
+        "seconds": 300,
+        "streaming": true,
+        "flashesPresented": 299,
+        "beepsHeard": 300,
+        "pairs": 299,
+        "driftMs": {
+          "n": 299,
+          "p50": 12.63,
+          "p95": 17.7,
+          "p99": 18.93,
+          "max": 19.01,
+          "mean": 12.88,
+          "avg": 12.88,
+          "meanSigned": -12.88
+        },
+        "oneFrameMs": 33.33,
+        "outputLatencyMs": 16,
+        "baseLatencyMs": 5.33
+      },
+      {
+        "seconds": 300,
+        "streaming": true,
+        "flashesPresented": 299,
+        "beepsHeard": 300,
+        "pairs": 299,
+        "driftMs": {
+          "n": 299,
+          "p50": 14.32,
+          "p95": 19.45,
+          "p99": 20.2,
+          "max": 21.01,
+          "mean": 13.31,
+          "avg": 13.31,
+          "meanSigned": -13.31
+        },
+        "oneFrameMs": 33.33,
+        "outputLatencyMs": 16,
+        "baseLatencyMs": 5.33
+      },
+      {
+        "seconds": 300,
+        "streaming": true,
+        "flashesPresented": 299,
+        "beepsHeard": 300,
+        "pairs": 299,
+        "driftMs": {
+          "n": 299,
+          "p50": 9.46,
+          "p95": 20.18,
+          "p99": 20.47,
+          "max": 20.64,
+          "mean": 10.88,
+          "avg": 10.88,
+          "meanSigned": -10.88
+        },
+        "oneFrameMs": 33.33,
+        "outputLatencyMs": 16,
+        "baseLatencyMs": 5.33
+      }
+    ]
+  }
+}
